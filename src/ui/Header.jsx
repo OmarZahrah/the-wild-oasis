@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import HeaderMenu from "./HeaderMenu";
 import UserAvatar from "../features/authentication/UserAvatar";
+import { mobile } from "../styles/responsive";
 
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
@@ -11,6 +12,7 @@ const StyledHeader = styled.header`
   gap: 2.4rem;
   align-items: center;
   justify-content: flex-end;
+  ${mobile({ justifyContent: "space-between" })}
 `;
 
 function Header() {
